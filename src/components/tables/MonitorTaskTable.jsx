@@ -59,8 +59,6 @@ const MonitorTaskTable = () => {
     getPaginationRowModel: getPaginationRowModel(),
   });
 
-  const { getTableProps, getTableBodyProps, headerGroups, rows, prepareRow } =
-    useReactTable({ columns, data });
 
   return (
     <Flex flexDir={"column"}>

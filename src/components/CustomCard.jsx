@@ -1,6 +1,6 @@
 import React from 'react'
 
-import { Image, Card, CardBody,Divider, Stack, Heading, Text, CardFooter, Button, ButtonGroup } from '@chakra-ui/react'
+import {  Card, CardBody, Stack, Heading, Text,} from '@chakra-ui/react'
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 

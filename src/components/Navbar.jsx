@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-import { Flex, Text, Heading } from "@chakra-ui/react";
+import { Flex, Heading } from "@chakra-ui/react";
 
 import { Squash as Hamburger } from "hamburger-react";
 
