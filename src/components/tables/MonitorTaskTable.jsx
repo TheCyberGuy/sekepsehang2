@@ -150,7 +150,7 @@ const MonitorTaskTable = (props) => {
                             onChange={(e) =>
                               header.column.setFilterValue(e.target.value)
                             }
-                            placeholder={`Search ${header.column.columnDef.header}`}
+                            placeholder={`Keresés ${header.column.columnDef.header} alapján`}
                             size="sm"
                           />
                         ) : null}
