@@ -1,4 +1,4 @@
-const DATA = [
+const MONDATA = [
     {"type": "TechView X1", "fault": "Nincs kép", "price": "15000 HUF"},
     {"type": "UltraScreen V200", "fault": "Villogó képernyő", "price": "12000 HUF"},
     {"type": "PixelPro Z300", "fault": "Beégett kép", "price": "25000 HUF"},
@@ -286,4 +286,4 @@ const DATA = [
     {"type": "ClearScreen M528", "fault": "Halvány kép", "price": "15600 HUF"}
 ]
 
-export default DATA
+export default MONDATA

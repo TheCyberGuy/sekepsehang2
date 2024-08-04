@@ -4,6 +4,8 @@ import { Flex, Heading } from "@chakra-ui/react";
 
 import { Squash as Hamburger } from "hamburger-react";
 
+import { Link } from "react-scroll";
+
 import { motion, AnimatePresence } from "framer-motion";
 
 const Navbar = () => {
@@ -23,18 +25,18 @@ const Navbar = () => {
       >
         <Heading size={"md"}>Sekepsehang</Heading>
         <Flex alignItems={"center"} gap={8}>
-          <Heading _hover={{ cursor: "pointer" }} size={"sm"}>
+          <Link to={'home'} smooth={true} _hover={{ cursor: "pointer" }} size={"sm"}>
             Főoldal
-          </Heading>
-          <Heading _hover={{ cursor: "pointer" }} size={"sm"}>
+          </Link>
+          <Link to={'javitasok'} smooth={true} _hover={{ cursor: "pointer" }} size={"sm"}>
             Javitások
-          </Heading>
-          <Heading _hover={{ cursor: "pointer" }} size={"sm"}>
+          </Link>
+          <Link to={''} _hover={{ cursor: "pointer" }} size={"sm"}>
             Kapcsolat
-          </Heading>
-          <Heading _hover={{ cursor: "pointer" }} size={"sm"}>
+          </Link>
+          <Link to={''} _hover={{ cursor: "pointer" }} size={"sm"}>
             GYIK
-          </Heading>
+          </Link>
         </Flex>
       </Flex>
       {/* Mobile Nav */}
@@ -93,18 +95,18 @@ const MobileNav = (props) => {
               },
             }}
           >
-            <Heading _hover={{ cursor: "pointer" }} size={"md"}>
+            <Link to={'home'} smooth={true} _hover={{ cursor: "pointer" }} onClick={() => {props.setNav(!props.nav)}} size={"md"}>
               Főoldal
-            </Heading>
-            <Heading _hover={{ cursor: "pointer" }} size={"md"}>
+            </Link>
+            <Link to={'javitasok'} smooth={true} offset={-66} _hover={{ cursor: "pointer" }} onClick={() => {props.setNav(!props.nav)}} size={"md"}>
               Javitások
-            </Heading>
-            <Heading _hover={{ cursor: "pointer" }} size={"md"}>
+            </Link>
+            <Link  smooth={true} _hover={{ cursor: "pointer" }} onClick={() => {props.setNav(!props.nav)}} size={"md"}>
               Kapcsolat
-            </Heading>
-            <Heading _hover={{ cursor: "pointer" }} size={"md"}>
+            </Link>
+            <Link smooth={true} _hover={{ cursor: "pointer" }} onClick={() => {props.setNav(!props.nav)}} size={"md"}>
               GYIK
-            </Heading>
+            </Link>
           </Flex>
         )}
       </AnimatePresence>

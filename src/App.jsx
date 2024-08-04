@@ -1,13 +1,14 @@
 import Navbar from "./components/Navbar"
 import Hero from "./components/Hero"
-import TableWrapper from "./components/tables/TableWrapper"
-function App() {
+import Javitasok from "./components/Javitasok"
 
+
+function App() {
   return (
     <>
     <Navbar />
     <Hero />
-    <TableWrapper />
+    <Javitasok />
     </>
   )
 }
